@@ -1,70 +1,55 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to start the app
 
-## Available Scripts
+Pretty simple as any react app, just enter the root project folder and run **npm install**, after that run **npm start**. I will provide you with a .env file, you can check how it should look like in .[EXAMPLE]env file.
 
-In the project directory, you can run:
+## Technologies
+- Javascript  
+- React (redux, router)
+- Firebase Realtime Database
+- Firebase Authentication
 
-### `npm start`
+## Styling
+- CSS  
+- Material UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Info
+I wanted to finish all the tasks that you have given me, also the bonus ones.  
+I was using firebase for the first time so it took me a little more time to finish the app.  
+I needed to understand concepts of firebase backend and database, such as authentification,  
+database rules, using web app as an object in code etc... But I succeeded in the end...
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Real-time Database isn't that rich with its query options, for example you can't make robust pagination (if I used firebase  
+pagination option I could only make next/back pagination, not page-based pagination), also you can't search by more than one property (so you need to make 3 queries on database for Lastname, name and email, than merge it to display data) etc...  
 
-### `npm test`
+So I had 2 options, either use Firestore database (which I think has more robust options) or make filtering and sorting data on the client.  
+I choose the former option, thinking that in that way I can show that I'm able to make these algorithms by myself. If you want, I can make  
+another branch doing it with firebase's real-time database.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Done
+[x] Create a layout for the app with header and main area  
+[x] Create Login and Signup components  
+[x] Make authentification work, login and signup  
+[x] Render errors if the email is duplicated, wrong password, etc...  
+[x] Make component and form for adding contacts  
+[x] Make Calendar work  
+[x] Fetch Data and render it  
+[x] Make Pagination on client  
+[x] Make Sorting  
+[x] Make Search on client  
+[x] Make editing page (tried reusing AddContact page, but there were too many obstacles using Formik and Yup, I couldn't do it)  
+[x] Make details page  
+[x] Delete contact functionality  
+[x] Update contact functionality  
+[x] Add notifications for errors, also for succeded actions for better user experience    
+[x] Add add to favorite functionality  
+[x] Add /omiljeni route and filter data for that component  
+[x] Deploy app on firebase hosting  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Todo
+[ ] Add fallback data to feed (contacts not avaliable)  
+[ ] Add loading spiner for fetching data  
+[ ] Put filtering data from useHook to some reducer action  
+[ ] Refactor Formik on signup and login page to not use useFormik hook because of using same principles (useHook didn't work with calendar)  
+[ ] Make animations example slide in contact when created etc...
