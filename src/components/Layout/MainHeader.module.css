@@ -1,0 +1,41 @@
+.header {
+  height: 3rem;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #252424;
+  margin: 0;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  line-height: 3rem;
+  display: inline;
+  margin: 0;
+}
+
+.link:hover {
+  color: gray;
+}
+
+.nav {
+  line-height: 3rem;
+  display: inline;
+}
+
+.ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+}
+
+.listItem {
+  display: inline;
+  margin: 0 0.8rem;
+}
